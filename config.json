@@ -1,0 +1,19 @@
+{
+  "function_config": {
+    "name": "summary-webhook",
+    "region": "us-west1",
+    "runtime": "nodejs18",
+    "memory": "256MB",
+    "timeout": "60s",
+    "max_instances": 10,
+    "min_instances": 0,
+    "concurrency": 80,
+    "entryPoint": "summary-webhook",
+    "environment_variables": {
+      "REGION": "us-west1"
+    }
+  },
+  "endpoints": {
+    "webhook_url": "https://us-west1-api-for-warp-drive.cloudfunctions.net/summary-webhook"
+  }
+}
